@@ -1,8 +1,10 @@
 # Reproducibility-Report-CountVQA
 
+
 This is the implementation of the ICLR 2018 paper [Learning to Count Objects in Natural Images for Visual Question Answering](https://openreview.net/forum?id=B12Js_yRb) to accompany the reproducibility report for the paper. Check here for the [official implementation](https://github.com/Cyanogenoid/vqa-counting). For instructions on setting up the code in this repository, skip to [setup-instructions](#setup-instructions).
 
 ## Summary of the paper
+
 
 Most of the visual question-answering (VQA) models perform poorly on the task of counting objects in an image. The reasons are manifold:
 
@@ -15,6 +17,7 @@ The paper proposes to overcome these challenges by using the attention maps (and
 
 
 ## Summary of the reproducibility report
+
 
 We implemented both the baseline architecture and the count module from scratch using the details mentioned in the paper and the hyper-parameters suggested by the paper to reproduce the experiments on the VQA-v2 dataset. We also implemented the baseline architecture, which does not use a separate count module. We report the results on test-dev and test, as obtained from the official evaluation server. For the validation set, we report results on individual question categories as well as balanced pairs by using the evaluation script provided by the authors for our trained model. We also report the results on the validation set as obtained from the official evaluation scripts released by \cite{goyal2017making}. In a nutshell, our experiments achieve the similar level of performance gains, compared to the baseline model, as reported in the paper. For a detailed discussion on this aspect and the assumptions we made in our implementation, refer to the [reproducibility report](TBD). 
 
@@ -33,6 +36,11 @@ Our assessment shows that the model is largely robust to choice of different hyp
 
 ## Results
 
+
+![Results on VQA v2 test and test-dev (obtained from standard evaluation server)](assets/Table1.png)
+![Results on the VQA v2 validation set with models trained only on the training set (uses the
+answer post-processing as described by the author)](assets/Table2.png)
+![Results on VQA v2 validation set (obtained from standard evaluation server)](assets/Table3.png)
 
 
 ## Setup Instructions
