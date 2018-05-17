@@ -1,7 +1,7 @@
 # Reproducibility-Report-CountVQA
 
 
-This is the implementation of the ICLR 2018 paper [Learning to Count Objects in Natural Images for Visual Question Answering](https://openreview.net/forum?id=B12Js_yRb) to accompany the reproducibility report for the paper. Check here for the [official implementation](https://github.com/Cyanogenoid/vqa-counting). For instructions on setting up the code in this repository, skip to [setup-instructions](#setup-instructions).
+This is the implementation of the ICLR 2018 paper [Learning to Count Objects in Natural Images for Visual Question Answering](https://openreview.net/forum?id=B12Js_yRb) to accompany the reproducibility report for the paper. Check here for the [official implementation](https://github.com/Cyanogenoid/vqa-counting). For our implementation, we have used the base code for VQA v2 dataset training from [this repo](https://github.com/Cyanogenoid/pytorch-vqa). The evaluation script (eval-acc.py) is used as given by the official implementation. For instructions on setting up the code in this repository, skip to [setup-instructions](#setup-instructions).
 
 ## Summary of the paper
 
